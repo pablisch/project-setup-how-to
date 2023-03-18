@@ -30,6 +30,6 @@ git push -u origin main
 
 ```
 
-<a href="http://example.com" target="_blank"></a>
+<a href="http://example.com" target="_blank">Example</a>
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
