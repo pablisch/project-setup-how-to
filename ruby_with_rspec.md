@@ -1,6 +1,6 @@
-# Most basic Ruby project setup
+# Ruby with RSpec project setup
 
-This is for a Ruby repo without RSpec
+This is for a Ruby repo with RSpec
 
 ```
 # create project directory
