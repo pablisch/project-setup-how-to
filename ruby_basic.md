@@ -31,6 +31,7 @@ git push -u origin main
 ```
 
 [Ruby basic project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
+
 [Ruby with RSpec project setup](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md)
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
