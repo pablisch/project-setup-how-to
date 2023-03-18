@@ -2,7 +2,7 @@
 
 This is for a Ruby repo without RSpec
 
-```zsh
+```
 # create project directory
 mkdir project-name
 cd project-name
@@ -29,3 +29,5 @@ git branch -M main
 git push -u origin main
 
 ```
+
+[markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
