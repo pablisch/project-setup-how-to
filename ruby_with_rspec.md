@@ -18,6 +18,14 @@ rvm list # will show you current, default and installed versions
 gem install bundler
 bundle init
 
+# add rspec
+bundle add rspec
+rspec --init
+mkdir lib
+
+# add format to .rspec file for more verbose reporting
+--format documentation
+
 # initialise git
 git init
 git add .
@@ -30,6 +38,7 @@ git push -u origin main
 
 ```
 
-[Ruby basic project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
+[Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
+[Ruby with RSpec project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
