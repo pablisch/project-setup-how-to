@@ -30,8 +30,6 @@ git push -u origin main
 
 ```
 
-<a href="http://example.com" target="_blank">Example</a>
-
-<a href="http://stackoverflow.com" target="_blank">Go</a>
+[Ruby basic project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
