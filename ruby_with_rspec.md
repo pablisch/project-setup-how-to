@@ -10,6 +10,7 @@ cd project-name
 # select Ruby version
 rvm get stable
 rvm list # will show you current, default and installed versions
+
     rvm use 3.0.0 # only if you need to change from the current version
     rvm default # to switch to the default version
     rvm rvm use ruby --latest --install --default # not my personal choice!
