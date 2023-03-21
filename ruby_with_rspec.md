@@ -6,8 +6,7 @@ This is for a Ruby repo with RSpec
 # create project directory
 mkdir project-name
 cd project-name
-```
-```ruby
+
 # select Ruby version
 rvm get stable
 rvm list # will show you current, default and installed versions
