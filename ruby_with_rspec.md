@@ -2,8 +2,11 @@
 
 This is for a Ruby repo with RSpec
 
-```
+```ruby
 # create project directory
+```
+
+```
 mkdir project-name
 cd project-name
 
