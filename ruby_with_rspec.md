@@ -2,7 +2,7 @@
 
 This is for a Ruby repo with RSpec
 
-```ruby
+```js
 # create project directory
 mkdir project-name
 cd project-name
