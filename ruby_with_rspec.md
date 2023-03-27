@@ -24,8 +24,10 @@ bundle add rspec
 rspec --init
 mkdir lib
 
+# open repo in VSCode
+code .
 # add format to .rspec file for more verbose reporting
---format documentation
+-f d  # abbreviation of --format documentation
 
 # initialise git
 git init
