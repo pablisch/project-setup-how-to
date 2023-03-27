@@ -1,6 +1,6 @@
 # Extra steps for PostgreSQL project setup
 
-Follow the usual [Ruby with RSpec project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md) or [Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md), then add the following steps:
+Follow the usual [Ruby with RSpec project setup](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md) or [Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md), then add the following steps:
 
 ```ruby
 # Additonal steps for databases
@@ -67,18 +67,18 @@ Its job is to connect to the database using DatabaseConnection.connect, and then
 
 In the example below, we simply execute a SELECT SQL query on the database and print the returned result set.
 
-# file: app.rb
+### file: app.rb
 
 require_relative 'lib/database_connection'
 
-# We need to give the database name to the method `connect`.
+### We need to give the database name to the method `connect`.
 DatabaseConnection.connect('music_library')
 
-# Perform a SQL query on the database and get the result set.
+### Perform a SQL query on the database and get the result set.
 sql = 'SELECT id, title FROM albums;'
 result = DatabaseConnection.exec_params(sql, [])
 
-# Print out each record from the result set .
+### Print out each record from the result set .
 result.each do |record|
   p record
 end
