@@ -10,7 +10,7 @@ touch spec/seeds.sql
 touch app.rb
 ```
 
-## Copy the following to the database_connection.rb file
+### Copy the following to the database_connection.rb file
 
 ```ruby
 # file: lib/database_connection.rb
@@ -43,7 +43,7 @@ class DatabaseConnection
 end
 ```
 
-## ADD the following to the top of the spec/spec_helper.rb file
+### ADD the following to the top of the spec/spec_helper.rb file
 
 ```ruby
 # file: spec/spec_helper.rb
@@ -55,8 +55,34 @@ require 'database_connection'
 DatabaseConnection.connect('your_database_name_test')
 ```
 
+### Add SQL seeds
 
+Add seeds where needed depending on your project.
 
+### The Main File
+
+app.js is the program main file and the "entrypoint" of the program — it is the file you will execute with the ruby command.
+
+Its job is to connect to the database using DatabaseConnection.connect, and then execute whatever logic the program needs to do.
+
+In the example below, we simply execute a SELECT SQL query on the database and print the returned result set.
+
+# file: app.rb
+
+require_relative 'lib/database_connection'
+
+# We need to give the database name to the method `connect`.
+DatabaseConnection.connect('music_library')
+
+# Perform a SQL query on the database and get the result set.
+sql = 'SELECT id, title FROM albums;'
+result = DatabaseConnection.exec_params(sql, [])
+
+# Print out each record from the result set .
+result.each do |record|
+  p record
+end
+Running the main file should output a list of records to the terminal.
 
 
 
