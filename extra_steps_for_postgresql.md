@@ -68,20 +68,24 @@ Its job is to connect to the database using DatabaseConnection.connect, and then
 In the example below, we simply execute a SELECT SQL query on the database and print the returned result set.
 
 ### file: app.rb
-
+```ruby
 require_relative 'lib/database_connection'
-
+```
 ### We need to give the database name to the method `connect`.
+```ruby
 DatabaseConnection.connect('music_library')
-
+```
 ### Perform a SQL query on the database and get the result set.
+```sql
 sql = 'SELECT id, title FROM albums;'
 result = DatabaseConnection.exec_params(sql, [])
-
+```
 ### Print out each record from the result set .
+```ruby
 result.each do |record|
   p record
 end
+```
 Running the main file should output a list of records to the terminal.
 
 

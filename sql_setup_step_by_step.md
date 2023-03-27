@@ -112,4 +112,44 @@ Implement tests in the usual TDD way, e.g.
     expect(artists.first.name).to eq('CAN') # => 'CAN'
   end
 ```
+This will need the repository class to be coded. The code for this is still fairly obscure at the moment but for this example would be:
+```ruby
+require_relative './artist'
 
+class ArtistRepository
+  def all
+    sql = 'SELECT id, name, genre FROM artists;'
+    result = DatabaseConnection.exec_params(sql, []) # sends the sql request
+
+    artists = [] # creates new array
+
+    result.each do |record| # iterates over the query results
+      artist = Artist.new # instantiates a new Artist object
+      artist.id = record['id'] # adds values from the hash result
+      artist.name = record['name']
+      artist.genre = record['genre']
+
+      artists << artist # pushes each Artist into the artists array
+    end
+
+    return artists # returns the array of Artist objects
+  end
+end
+```
+
+## 9. Write app.rb
+
+Once testing is done, we are ready to write the app.rb file.
+
+In this example, we only have one method to call on:
+```ruby
+require_relative 'lib/database_connection'
+require_relative 'lib/artist_repository'
+
+# We need to give the database name to the method `connect`.
+DatabaseConnection.connect('music_library')
+
+artist_repository = ArtistRepository.new
+
+artist_repository.all.each { |artist| p artist }
+```
