@@ -6,14 +6,21 @@ Complete [the design template](https://github.com/pablisch/databases/blob/main/r
 
 ## CHECK =>
 
-that you have entered THIS PROJECT"S database name in the spec_helper.rb file!
+> that you have entered THIS PROJECT"S database name in the spec_helper.rb file!
+> that you use the DATABASE-NAME and the TABLE-NAME in the correct places and don't mix them up!
+> Create a database AND database_test AND load them both!
 
 ## 1. Design the Table, e.g.
 
 Create the db, e.g. 
 ```bash
 psql -h 127.0.0.1
-CREATE DATABASE music_library
+
+pablo=# CREATE DATABASE music_library
+pablo=# CREATE DATABASE music_library_test
+
+psql -h 127.0.0.1 your_database_name < {table_name}.sql
+psql -h 127.0.0.1 your_database_name_test < {table_name}.sql
 ```
 
 Table: artists
@@ -27,11 +34,11 @@ id | name | genre
 Create a test library, e.g. 
 ```bash
 psql -h 127.0.0.1
-CREATE DATABASE music_library_test;
+CREATE DATABASE music_library_test; # if you have not done so already!
 ```
 Insert the base table into it, e.g.
 ```bash
-psql -h 127.0.0.1 your_database_name < {table_name}.sql
+psql -h 127.0.0.1 your_database_name < {table_name}.sql # if you have not done so already!
 ```
 Create seeds to go in a seed file in the spec folder e.g. spec/seeds_<table-name>.sql with content like the example below: 
 ```sql
