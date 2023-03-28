@@ -78,5 +78,6 @@ Running the main file should output a list of records to the terminal.
 
 [SQL project step-by-step](https://github.com/pablisch/project-setup/blob/main/sql_project_step_by_step.md)
 
+[Recipe design templates (GitHub)](https://github.com/pablisch/templates)
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
