@@ -69,22 +69,18 @@ app.js is the program main file and the "entrypoint" of the program — it is th
 Its job is to connect to the database using DatabaseConnection.connect, and then execute whatever logic the program needs to do.
 
 In the example below, we simply execute a SELECT SQL query on the database and print the returned result set.
-
-### file: app.rb
 ```ruby
+# file: app.rb
 require_relative 'lib/database_connection'
-```
+
 ### We need to give the database name to the method `connect`.
-```ruby
 DatabaseConnection.connect('music_library')
-```
+
 ### Perform a SQL query on the database and get the result set.
-```sql
 sql = 'SELECT id, title FROM albums;'
 result = DatabaseConnection.exec_params(sql, [])
-```
+
 ### Print out each record from the result set .
-```ruby
 result.each do |record|
   p record
 end
