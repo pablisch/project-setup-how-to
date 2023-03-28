@@ -1,4 +1,4 @@
-# Extra steps for PostgreSQL project setup
+# SQL extra steps for PostgreSQL project setup
 
 Follow the usual [Ruby with RSpec project setup](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md) or [Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md), then add the following steps:
 
