@@ -4,6 +4,10 @@ Follow on from [Ruby with RSpec project setup](https://github.com/pablisch/proje
 
 Complete [the design template](https://github.com/pablisch/databases/blob/main/resources/repository_class_recipe_template.md):
 
+## CHECK =>
+
+that you have entered THIS PROJECT"S database name in the spec_helper.rb file!
+
 ## 1. Design the Table, e.g.
 
 Create the db, e.g. 
@@ -23,7 +27,7 @@ id | name | genre
 Create a test library, e.g. 
 ```bash
 psql -h 127.0.0.1
-CREATE DATABASE music_library_test.
+CREATE DATABASE music_library_test;
 ```
 Insert the base table into it, e.g.
 ```bash

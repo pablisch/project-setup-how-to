@@ -9,6 +9,9 @@ touch lib/database_connection.rb
 touch spec/seeds.sql
 touch app.rb
 ```
+```ruby
+touch lib/database_connection.rb spec/seeds.sql app.rb
+```
 
 ### Copy the following to the database_connection.rb file
 
@@ -25,8 +28,8 @@ class DatabaseConnection
   # This method connects to PostgreSQL using the 
   # PG gem. We connect to 127.0.0.1, and select
   # the database name given in argument.
-  def self.connect(database_name)
-    @connection = PG.connect({ host: '127.0.0.1', dbname: database_name })
+  def self.connect(database_name) # 🎃<<<<< DATABASE NAME
+    @connection = PG.connect({ host: '127.0.0.1', dbname: database_name }) # 🎃<<<<< DATABASE NAME
   end
 
   # This method executes an SQL query 
@@ -52,7 +55,7 @@ require 'database_connection'
 
 # Make sure this connects to your test database
 # (its name should end with '_test')
-DatabaseConnection.connect('your_database_name_test')
+DatabaseConnection.connect('your_database_name_test') # 🎃<<<<< DATABASE NAME
 ```
 
 ### Add SQL seeds
