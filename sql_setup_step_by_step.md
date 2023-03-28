@@ -12,6 +12,12 @@ Complete [the design template](https://github.com/pablisch/databases/blob/main/r
 
 ## 1. Design the Table, e.g.
 
+Table: artists
+
+Columns:
+
+id | name | genre
+
 Create the db, e.g. 
 ```bash
 psql -h 127.0.0.1
@@ -22,12 +28,6 @@ pablo=# CREATE DATABASE music_library_test
 psql -h 127.0.0.1 your_database_name < {table_name}.sql
 psql -h 127.0.0.1 your_database_name_test < {table_name}.sql
 ```
-
-Table: artists
-
-Columns:
-
-id | name | genre
 
 ## 2. Create test SQL seeds 
 
