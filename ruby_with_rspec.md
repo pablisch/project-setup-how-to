@@ -43,6 +43,11 @@ git push -u origin main
 
 [Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
 
-[Ruby with RSpec project setup - this page](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md)
+[Ruby with RSpec project setup](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md)
+
+[SQL extra steps for PostgreSQL project setup](https://github.com/pablisch/project-setup/blob/main/sql_extra_steps_for_postgresql.md)
+
+[SQL project step-by-step](https://github.com/pablisch/project-setup/blob/main/sql_project_step_by_step.md)
+
 
 [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

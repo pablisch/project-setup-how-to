@@ -4,7 +4,7 @@ Follow on from [Ruby with RSpec project setup](https://github.com/pablisch/proje
 
 Complete [the design template](https://github.com/pablisch/databases/blob/main/resources/repository_class_recipe_template.md):
 
-## CHECK =>
+## CHECK...
 
 > that you have entered THIS PROJECT"S database name in the spec_helper.rb file!
 > that you use the DATABASE-NAME and the TABLE-NAME in the correct places and don't mix them up!
@@ -164,3 +164,14 @@ artist_repository = ArtistRepository.new
 
 artist_repository.all.each { |artist| p artist }
 ```
+
+[Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
+
+[Ruby with RSpec project setup](https://github.com/pablisch/project-setup/blob/main/ruby_with_rspec.md)
+
+[SQL extra steps for PostgreSQL project setup](https://github.com/pablisch/project-setup/blob/main/sql_extra_steps_for_postgresql.md)
+
+[SQL project step-by-step](https://github.com/pablisch/project-setup/blob/main/sql_project_step_by_step.md)
+
+
+[markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
