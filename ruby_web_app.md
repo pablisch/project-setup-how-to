@@ -88,7 +88,7 @@ $ rackup
 
 Now use your browser to visit `http://localhost:9292`. You should see the following page.
 
-[](./images/sinatra-home.png/sinatra-home.png)
+[](./images/sinatra-home.png)
 
 [Ruby basic project setup](https://github.com/pablisch/project-setup/blob/main/ruby_basic.md)
 
