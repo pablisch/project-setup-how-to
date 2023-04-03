@@ -13,8 +13,7 @@ bundle init
 # add rspec
 bundle add rspec
 rspec --init
-mkdir lib
-mkdir recipes
+mkdir lib recipes
 
 # Add the sinatra library, the webrick gem, and rack-test
 bundle add sinatra sinatra-contrib webrick rack-test
@@ -24,10 +23,6 @@ mkdir spec/integration
 
 # Create the main application file, the app_spec.rb integration tests file and the config.ru file
 touch app.rb spec/integration/app_spec.rb config.ru
-
-# open repo in VSCode
-code .
--f d  # abbreviation of --format documentation
 
 # initialise git
 git init
