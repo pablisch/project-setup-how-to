@@ -1,4 +1,4 @@
-# Ruby for Web App with RSpec project setup
+# Ruby for Web App with Sinatra & RSpec project setup
 
 This is for a Ruby Web App with RSpec project setup
 
