@@ -23,6 +23,6 @@ npm install
 npm run build
 
 # Base project files
-touch index.html index.js styles.css
+touch index.html index.js styles.css .gitignore
 mkdir images
 ```

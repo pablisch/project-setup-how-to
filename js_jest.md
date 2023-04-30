@@ -16,4 +16,7 @@ npm install -g jest
 
 # Run our tests
 jest
+
+# make gitignore file
+touch .gitignore
 ```
