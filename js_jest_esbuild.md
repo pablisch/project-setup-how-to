@@ -21,8 +21,14 @@ jest
 npm install -g esbuild
 npm install
 npm run build
-
-# Base project files
+```
+```bash
+# create base project files
 touch index.html index.js styles.css .gitignore
+mkdir images
+```
+```bash
+# create base project files and MVC + test files
+touch index.html index.js styles.css .gitignore view.js view.test.js model.js model.test.js client.js client.test.js
 mkdir images
 ```
