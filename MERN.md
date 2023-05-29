@@ -65,6 +65,8 @@ cd frontend
 npm install react-router-dom axios axios-mock-adapter
 npm install --save-dev cypress
 npx cypress open
+cd ..
+code .
 ```
 
 ## To start your app servers
