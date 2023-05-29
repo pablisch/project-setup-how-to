@@ -29,10 +29,35 @@ cd ..
 npx create-react-app frontend
 ```
 ```bash
-# cd into frontend and install cypress
+# cd into frontend and install react-router-dom and cypress
 cd frontend
-npm install  --save-dev cypress
+npm install react-router-dom
+npm install --save-dev cypress
 ```
+```bash
+# open cypress studio to configure testing
+npx cypress open
+```
+
+## All of the above in one step...
+
+Create you project directory and cd into it
+```bash
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose
+npm install --save-dev jest
+mkdir controllers models routes middleware spec
+touch app.js server.js
+cd ..
+npx create-react-app frontend
+cd frontend
+npm install react-router-dom
+npm install --save-dev cypress
+npx cypress open
+```
+
 ## To start your app servers
 
 Open two terminals, one in the backend and one in the frontend
