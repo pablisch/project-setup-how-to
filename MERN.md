@@ -10,6 +10,44 @@ mkdir backend
 cd backend
 ```
 ```bash
+# intialise a new Node.js project
+npm init -y
+# install express and mongodb driver
+npm install express mongoose
+# install jest
+npm install --save-dev jest
+# setup backend folders and files
+mkdir controllers models routes middleware spec
+touch app.js server.js
+```
+```bash
+# go back to the root directory
+cd ..
+```
+```bash
+# initialise the frontend as a new react app
+npx create-react-app frontend
+```
+```bash
+# cd into frontend and install cypress
+cd frontend
+npm install  --save-dev cypress
+```
+## To start your app servers
+
+Open two terminals, one in the backend and one in the frontend
+```bash
+# in the backend
+node server start
+```
+```bash
+# in the frontend
+npm start
+```
+
+
+
+
 
 
 # Setup our environment to use node latest version
