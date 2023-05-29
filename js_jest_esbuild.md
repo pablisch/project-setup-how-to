@@ -32,3 +32,9 @@ mkdir images
 touch index.html index.js styles.css .gitignore view.js view.test.js model.js model.test.js client.js client.test.js
 mkdir images
 ```
+
+most of the time, this bit of package.json is not automatically added
+it is needed to run `npm run build`.
+```bash
+"build": "esbuild index.js --bundle --outfile=bundle.js --watch"
+```
