@@ -17,8 +17,9 @@ cd backend
 ```bash
 # intialise a new Node.js project
 npm init -y
-# install express and mongodb driver
-npm install express mongoose
+# install express, mongodb driver, bcrypt, jsonwebtoken and nodemon
+npm install express mongoose bcrypt jsonwebtoken
+npm install nodemon --save-dev
 # install jest
 npm install --save-dev jest
 # setup backend folders and files
@@ -34,9 +35,9 @@ cd ..
 npx create-react-app frontend
 ```
 ```bash
-# cd into frontend and install react-router-dom and cypress
+# cd into frontend and install react-router-dom, axios, axios mcok adapter and cypress
 cd frontend
-npm install react-router-dom
+npm install react-router-dom axios axios-mock-adapter
 npm install --save-dev cypress
 ```
 ```bash
@@ -53,14 +54,15 @@ touch .gitignore
 mkdir backend
 cd backend
 npm init -y
-npm install express mongoose
+npm install express mongoose bcrypt jsonwebtoken
+npm install nodemon --save-dev
 npm install --save-dev jest
 mkdir controllers models routes middleware spec
 touch app.js server.js .gitignore
 cd ..
 npx create-react-app frontend
 cd frontend
-npm install react-router-dom
+npm install react-router-dom axios axios-mock-adapter
 npm install --save-dev cypress
 npx cypress open
 ```
