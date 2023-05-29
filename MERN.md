@@ -5,6 +5,11 @@ mkdir mern-app
 cd mern-app
 ```
 ```bash
+# initialise git and add .gitignore
+git init
+touch .gitignore
+```
+```bash
 # Create project directory and backend folder
 mkdir backend
 cd backend
@@ -18,7 +23,7 @@ npm install express mongoose
 npm install --save-dev jest
 # setup backend folders and files
 mkdir controllers models routes middleware spec
-touch app.js server.js
+touch app.js server.js .gitignore
 ```
 ```bash
 # go back to the root directory
@@ -43,13 +48,15 @@ npx cypress open
 
 Create you project directory and cd into it
 ```bash
+git init
+touch .gitignore
 mkdir backend
 cd backend
 npm init -y
 npm install express mongoose
 npm install --save-dev jest
 mkdir controllers models routes middleware spec
-touch app.js server.js
+touch app.js server.js .gitignore
 cd ..
 npx create-react-app frontend
 cd frontend
