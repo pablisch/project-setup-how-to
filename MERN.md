@@ -44,6 +44,8 @@ npm install --save-dev cypress
 # open cypress studio to configure testing
 npx cypress open
 ```
+Populate the .gitignore file.
+There is a sample JS .gitignore in this repo.
 
 ## All of the above in one step...
 
