@@ -1,4 +1,4 @@
-# PROJECT SETUP
+# PROJECT SETUP REPOSITORY
 
 The purpose of this repository is to provide shortcuts to setting up a variety of new projects.
 It is not an app in itself and cannot be run, but it does contain instructions for setting up new projects.
