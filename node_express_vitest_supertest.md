@@ -7,7 +7,7 @@ git init
 npm init -y
 
 npm i express nodemon
-npm install --save-dev jest supertest
+npm install --save-dev vitest supertest
 
 mkdir __tests__ routes controllers
 touch .gitignore app.js index.js __tests__/app.test.js routes/userRoutes.js controllers/userController.js
