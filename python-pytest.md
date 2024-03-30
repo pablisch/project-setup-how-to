@@ -14,16 +14,13 @@ pipenv install pytest
 mkdir tests lib
 touch tests/__init__.py lib/__init__.py
 
+# Run our tests
+pytest -x
+
 # Initialize a git repository and make an initial commit
 git init
 git add .
 git commit -m "Project setup with Pytest."
-
-# Run our tests
-pytest -x
-
-# make gitignore file
-touch .gitignore
 ```
 
 ## Create your virtual environment
@@ -42,6 +39,4 @@ source <name_of_virtual_environment_venv>/bin/activate
 # Deactivate the virtual environment
 deactivate
 ```
-
-
 
